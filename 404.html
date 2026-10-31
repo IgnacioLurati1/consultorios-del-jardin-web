@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-edmrXKsDVI5coEKvN9pgNvkdW3fjVacsOux46VEV0yc=' 'sha256-eD80SOn+yu125hcKne3yVmaBTLmprX+9HGKqkmVssqM='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://api.consultoriosdeljardin.com.ar https://consultorios-del-jardin-production.up.railway.app https://luta.tailbd67d3.ts.net; connect-src 'self' https://api.consultoriosdeljardin.com.ar https://consultorios-del-jardin-production.up.railway.app https://luta.tailbd67d3.ts.net https://spltnoksgdkbaamskuau.supabase.co; frame-src 'self' https://www.google.com https://maps.google.com; worker-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      Lo que leen los buscadores y lo que muestran WhatsApp o Instagram al pegar el link.
+      Título, descripción y dirección salen de src/seo.json: al compilar,
+      scripts/seo-pages.mjs los vuelve a escribir acá y arma una copia por cada página
+      pública. Cambiar un texto es cambiarlo allá.
+    -->
+    <title>Consultorios del Jardín</title>
+    <meta name="description" content="Consultorios en 9 de Julio 3672, Rosario. Psicopedagogía, psicología, psiquiatría, nutrición y fonoaudiología, con turnos online y elección de profesional." />
+    <link rel="canonical" href="https://consultoriosdeljardin.com.ar/" />
+    <meta name="theme-color" content="#2f5e46" />
+
+    <!-- Google pide un ícono cuadrado de lado múltiplo de 48: el de 64 no le servía. -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:site_name" content="Consultorios del Jardín" />
+    <meta property="og:title" content="Consultorios del Jardín" />
+    <meta property="og:description" content="Consultorios en 9 de Julio 3672, Rosario. Psicopedagogía, psicología, psiquiatría, nutrición y fonoaudiología, con turnos online y elección de profesional." />
+    <meta property="og:url" content="https://consultoriosdeljardin.com.ar/" />
+    <meta property="og:image" content="https://consultoriosdeljardin.com.ar/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Sala de espera de Consultorios del Jardín, con el jardín al fondo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Consultorios del Jardín" />
+    <meta name="twitter:description" content="Consultorios en 9 de Julio 3672, Rosario. Psicopedagogía, psicología, psiquiatría, nutrición y fonoaudiología, con turnos online y elección de profesional." />
+    <meta name="twitter:image" content="https://consultoriosdeljardin.com.ar/og-image.jpg" />
+
+    <!--
+      El consultorio contado en el formato que entienden los buscadores: nombre, dirección,
+      horario y especialidades. `WebSite` es lo que le dice a Google cómo se llama el sitio,
+      para que muestre el nombre y no el dominio.
+    -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://consultoriosdeljardin.com.ar/#sitio",
+      "url": "https://consultoriosdeljardin.com.ar/",
+      "name": "Consultorios del Jardín",
+      "alternateName": "Consultorios del Jardin",
+      "inLanguage": "es-AR"
+    },
+    {
+      "@type": "MedicalBusiness",
+      "@id": "https://consultoriosdeljardin.com.ar/#consultorio",
+      "name": "Consultorios del Jardín",
+      "url": "https://consultoriosdeljardin.com.ar/",
+      "logo": "https://consultoriosdeljardin.com.ar/icon-512.png",
+      "image": "https://consultoriosdeljardin.com.ar/og-image.jpg",
+      "description": "Consultorios de psicopedagogía, psicología, psiquiatría, nutrición y fonoaudiología en Rosario, con turnos online.",
+      "email": "consultoriosjardinok@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "9 de Julio 3672",
+        "addressLocality": "Rosario",
+        "addressRegion": "Santa Fe",
+        "postalCode": "S2000",
+        "addressCountry": "AR"
+      },
+      "hasMap": "https://www.google.com/maps/dir/?api=1&destination=9+de+Julio+3672,+Rosario,+Santa+Fe",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "20:00"
+        }
+      ],
+      "knowsAbout": [
+        "Psicopedagogía",
+        "Psicología",
+        "Psiquiatría",
+        "Nutrición",
+        "Fonoaudiología"
+      ],
+      "sameAs": [
+        "https://instagram.com/consultorios_jardin"
+      ]
+    }
+  ]
+}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Ubuntu para toda la aplicacion; Fraunces solo para los titulos de la portada. -->
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,500..700,0..100,0..1&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <!--
+      El tema se resuelve antes de pintar nada. Si esperara a que arranque React, la
+      primera pantalla saldria en claro y pasaria a oscuro medio segundo despues: un
+      fogonazo blanco en la cara de alguien que justamente eligio no tener uno.
+      Es la misma cuenta que hace ThemeContext, escrita para correr sin el.
+    -->
+    <script>
+      (function () {
+        try {
+          // Sin cookie vale el mismo arranque que usa ThemeContext: el horario prendido.
+          var raw = document.cookie.split("; ").find(function (row) { return row.indexOf("tema=") === 0; });
+          var saved = raw
+            ? JSON.parse(decodeURIComponent(raw.slice(5)))
+            : { mode: "schedule", from: "20:00", to: "07:00" };
+          var theme = saved.mode;
+          if (theme === "schedule") {
+            var now = new Date();
+            var minutes = now.getHours() * 60 + now.getMinutes();
+            var toMinutes = function (time) {
+              var parts = String(time).split(":");
+              return Number(parts[0]) * 60 + Number(parts[1]);
+            };
+            var start = toMinutes(saved.from);
+            var end = toMinutes(saved.to);
+            var dark = start === end ? false
+              : start < end ? minutes >= start && minutes < end
+              : minutes >= start || minutes < end;
+            theme = dark ? "dark" : "light";
+          }
+          if (theme === "dark" || theme === "light") document.documentElement.setAttribute("data-theme", theme);
+        } catch (error) {
+          /* Sin cookie, cookie rota, o cookies bloqueadas: queda el tema claro. */
+        }
+      })();
+    </script>
+    <!--
+      La apariencia del consultorio —el estilo de los paneles y el color de la marca— también
+      antes de pintar. La guarda lib/installation (useAppearance) la vez anterior; sin esto la
+      primera pantalla sale con la letra y el verde de siempre y cambia medio segundo después.
+      Es la misma cuenta que applyBrand y applyPanelSkin, escrita para correr sin React.
+    -->
+    <script>
+      (function () {
+        try {
+          var saved = JSON.parse(localStorage.getItem("apariencia") || "null");
+          if (!saved) return;
+          var root = document.documentElement;
+          if (saved.skin && saved.skin !== "jardin") {
+            root.setAttribute("data-panel-skin", saved.skin);
+            if (saved.font) {
+              var link = document.createElement("link");
+              link.rel = "stylesheet";
+              link.href = "https://fonts.googleapis.com/css2?family=" + saved.font + "&display=swap";
+              link.setAttribute("data-skin-font", saved.skin);
+              document.head.appendChild(link);
+            }
+          }
+          var brand = saved.brand;
+          if (brand && typeof brand.hue === "number" && typeof brand.saturation === "number") {
+            var s = Math.max(0, Math.min(100, brand.saturation));
+            root.style.setProperty("--sea-h", String(brand.hue));
+            root.style.setProperty("--sea-s", s + "%");
+            root.style.setProperty("--sea-h2", String((brand.hue + 12) % 360));
+            root.style.setProperty("--sea-s2", Math.min(100, s + 10) + "%");
+            root.style.setProperty("--home-leaf", "hsl(" + brand.hue + " " + Math.min(100, s + 20) + "% 40%)");
+          }
+          // Los colores propios de la barra y el pie, ya resueltos (ver lib/elementColors).
+          var vars = saved.vars;
+          if (vars && typeof vars === "object") {
+            for (var name in vars) {
+              if (/^--[a-z-]+$/.test(name) && typeof vars[name] === "string") root.style.setProperty(name, vars[name]);
+            }
+          }
+        } catch (error) {
+          /* Sin almacenamiento o con algo roto guardado: se pinta lo de siempre. */
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-D8tiXqs1.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BnOrnkxk.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Para lo que lee la página sin ejecutarla: lo mínimo para saber qué y dónde es. -->
+    <noscript>
+      <h1>Consultorios del Jardín</h1>
+      <p>Consultorios en 9 de Julio 3672, Rosario. Psicopedagogía, psicología, psiquiatría, nutrición y fonoaudiología. Lunes a viernes, de 9 a 20.</p>
+    </noscript>
+  </body>
+</html>
